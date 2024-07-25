@@ -77,7 +77,7 @@ git status
 ```
 > if there is something in **RED** then open the file and you will see the following:
 
-![Alt text](relative/poth/to/image.png)
+![Alt text](a.png)
 
 > **now open the file / file's that need to be modified with the conflicts.**
 each file will look like that:
