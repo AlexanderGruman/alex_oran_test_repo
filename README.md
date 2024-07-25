@@ -77,3 +77,51 @@ git status
 ```
 > if there is something in **RED** then open the file and you will see the following:
 
+![Alt text](relative/poth/to/image.png)
+
+> **now open the file / file's that need to be modified with the conflicts.**
+each file will look like that:
+
+```bash
+<<<<< HEAD
+texttext
+....
+all the changes you have done will be showen here
+======
+```
+
+```bash
+newtextnewtext
+....
+all the changes coming from the integration branch will be here
+>>>>> origin/integration
+```
+
+make sure to include the changes from integration, and change only what you think won't harm the project.
+
+> now add all the changes you have made (conflicts solved):
+```bash
+git add file1
+git add file2
+...
+...
+git commit -m "conflicts solved from integration to my issued branch msg"
+```
+
+### now finaly we can push this branch to the repo:
+```bash
+git push origin your_branch_name
+```
+### now you want to push this branch changes to integration.
+>Creating the Pull Request
+After pushing the changes, follow the steps on GitHub to create a pull request from new_br to integration_br:
+
+1. Go to your repository on GitHub.
+
+2. Click on the "Compare & pull request" button.
+
+3. Select new_br as the source branch and integration_br as the target branch.
+
+4. Add a title and description for your pull request.
+
+5. Click "Create pull request".
